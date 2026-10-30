@@ -1,7 +1,6 @@
 // #include <layout_shift.dtsi>
 
 #include <behaviors.dtsi>
-#include <behaviors/runtime_macro.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/pointing.h>
@@ -34,20 +33,22 @@
         };
 
         // mouse scroll
+
         rsr_msch: rsr_msch {
-			compatible = "zmk,behavior-runtime-sensor-rotate";
-			#sensor-binding-cells = <0>;
-			tap-ms = <5>;
-			cw-binding = <&msc SCRL_DOWN>;
-			ccw-binding = <&msc SCRL_UP>;
-		};
+            compatible = "zmk,behavior-runtime-sensor-rotate";
+            #sensor-binding-cells = <0>;
+            tap-ms = <5>;
+            cw-binding = <&msc SCRL_DOWN>;
+            ccw-binding = <&msc SCRL_UP>;
+        };
+
         rsr_mscv: rsr_mscv {
-			compatible = "zmk,behavior-runtime-sensor-rotate";
-			#sensor-binding-cells = <0>;
-			tap-ms = <5>;
-			cw-binding = <&msc SCRL_RIGHT>;
-			ccw-binding = <&msc SCRL_LEFT>;
-		};
+            compatible = "zmk,behavior-runtime-sensor-rotate";
+            #sensor-binding-cells = <0>;
+            tap-ms = <5>;
+            cw-binding = <&msc SCRL_RIGHT>;
+            ccw-binding = <&msc SCRL_LEFT>;
+        };
     };
 };
 
@@ -60,21 +61,17 @@
 #define SSNIPE 6
 
 / {
-    runtime_combo_defaults {
-        compatible = "cormoran,runtime-combo-defaults";
+    combos {
+        compatible = "zmk,combos";
 
         COMBO_LANG1 {
-            slot = <0>;
             bindings = <&kp LANGUAGE_1>;
             key-positions = <1 2>;
-            display-name = "LANG1";
         };
 
         COMBO_LANG2 {
-            slot = <1>;
             bindings = <&kp LANG2>;
             key-positions = <2 3>;
-            display-name = "LANG2";
         };
     };
 
@@ -84,11 +81,11 @@
         default_layer {
             label = "Def";
             bindings = <
-&kp TAB       &kp Q     &kp W      &kp E     &kp R          &kp T                   &lt SNIPE Y     &kp U         &kp I         &kp O     &kp P     &kp BACKSPACE
-&lt BT ESC    &kp A     &kp S      &kp D     &kp F          &kp G                   &kp H           &kp J         &kp K         &kp L     &kp BSLH  &kp ENTER
-&kp LSHFT     &kp Z     &kp X      &kp C     &kp V          &kp B                   &kp N           &kp M         &kp COMMA     &kp DOT   &kp UP
-&mt LCTL ESC  &kp LGUI  &kp LALT             &lt NUM SPACE  &lt FUNC SPACE          &lt FUNC SPACE  &lt NUM RALT  &lt NUM RCTL  &kp LEFT  &kp DOWN  &kp RIGHT
-&kp LEFT      &kp UP    &kp SPACE  &kp DOWN  &kp RIGHT                              &mkp MB1        &mkp MB3      &mkp MB2
+&kp TAB       &kp Q       &kp W         &kp F     &kp SLASH      &kp LEFT_BRACKET          &lt SNIPE P     &kp R         &kp D         &kp Y     &kp L     &kp BACKSPACE
+&lt BT ESC    &kp A       &kp O         &kp E     &kp I          &kp U                     &kp G           &kp N         &kp T         &kp S     &kp K     &kp ENTER
+&kp LSHFT     &kp Z       &kp X         &kp C     &kp V          &kp B                     &kp J           &kp M         &kp COMMA     &kp DOT   &kp UP
+&mt LCTL ESC  &kp LALT    &kp LEFT_GUI            &lt NUM SPACE  &lt FUNC SPACE            &lt FUNC SPACE  &lt NUM RALT  &lt NUM RCTL  &kp LEFT  &kp DOWN  &kp RIGHT
+&kp LEFT      &kp UP      &kp SPACE     &kp DOWN  &kp RIGHT                                &mkp MB1        &mkp MB3      &mkp MB2
 &mo SCROLL    &mo SSNIPE
             >;
 
@@ -112,12 +109,12 @@
         num_layer {
             label = "Num";
             bindings = <
-&kp CAPS         &kp N1         &kp N2     &kp N3    &kp N4     &kp N5             &kp N6     &kp N7     &kp N8    &kp N9    &kp N0    &trans
-&trans           &trans         &trans     &trans    &trans     &trans             &kp MINUS  &kp EQUAL  &kp LBKT  &kp RBKT  &kp BSLH  &trans
-&mt LSHFT SPACE  &kp BACKSPACE  &kp DEL    &trans    &trans     &trans             &trans     &kp FSLH   &kp SEMI  &kp SQT   &trans
-&trans           &kp ENTER      &kp ENTER            &kp ENTER  &kp ENTER          &trans     &trans     &trans    &trans    &trans    &trans
-&kp LEFT         &kp UP         &kp SPACE  &kp DOWN  &kp RIGHT                     &trans     &trans     &trans
-&trans     &trans
+&kp CAPS         &kp N1         &kp N2        &kp N3        &kp N4        &kp N5             &kp MINUS     &kp EQUAL  &kp LBKT  &kp RBKT  &kp BSLH  &trans
+&trans           &kp NUMBER_1   &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp N5             &kp NUMBER_6  &kp N7     &kp N8    &kp N9    &kp N0    &trans
+&mt LSHFT SPACE  &kp BACKSPACE  &kp DEL       &trans        &trans        &trans             &trans        &kp FSLH   &kp SEMI  &kp SQT   &trans
+&trans           &kp ENTER      &kp ENTER                   &kp ENTER     &kp ENTER          &trans        &trans     &trans    &trans    &trans    &trans
+&kp LEFT         &kp UP         &kp SPACE     &kp DOWN      &kp RIGHT                        &trans        &trans     &trans
+&trans           &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
@@ -131,7 +128,7 @@
 &trans    &trans  &trans     &trans    &trans     &trans          &trans  &trans  &trans  &trans  &trans
 &trans    &trans  &trans               &trans     &trans          &trans  &trans  &trans  &trans  &trans  &trans
 &kp LEFT  &kp UP  &kp SPACE  &kp DOWN  &kp RIGHT                  &trans  &trans  &trans
-&trans     &trans
+&trans    &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
@@ -145,7 +142,7 @@
 &trans      &trans        &trans        &trans        &trans        &trans                &trans          &trans  &trans  &trans  &trans
 &trans      &trans        &trans                      &trans        &trans                &trans          &trans  &trans  &trans  &trans  &trans
 &kp LEFT    &kp UP        &kp SPACE     &kp DOWN      &kp RIGHT                           &trans          &trans  &trans
-&trans     &trans
+&trans      &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
@@ -154,12 +151,12 @@
         scroll_layer {
             label = "SCROLL";
             bindings = <
-&trans      &trans        &trans        &trans        &trans        &trans                &trans          &trans  &trans  &trans  &trans  &trans
-&trans      &trans        &trans        &trans        &trans        &trans                &trans          &trans  &trans  &trans  &trans  &trans
-&trans      &trans        &trans        &trans        &trans        &trans                &trans          &trans  &trans  &trans  &trans
-&trans      &trans        &trans                      &trans        &trans                &trans          &trans  &trans  &trans  &trans  &trans
-&kp LEFT    &kp UP        &kp SPACE     &kp DOWN      &kp RIGHT                           &trans          &trans  &trans
-&trans     &trans
+&trans    &trans  &trans     &trans    &trans     &trans          &trans  &trans  &trans  &trans  &trans  &trans
+&trans    &trans  &trans     &trans    &trans     &trans          &trans  &trans  &trans  &trans  &trans  &trans
+&trans    &trans  &trans     &trans    &trans     &trans          &trans  &trans  &trans  &trans  &trans
+&trans    &trans  &trans               &trans     &trans          &trans  &trans  &trans  &trans  &trans  &trans
+&kp LEFT  &kp UP  &kp SPACE  &kp DOWN  &kp RIGHT                  &trans  &trans  &trans
+&trans    &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
@@ -168,12 +165,12 @@
         SSNIPE_layer {
             label = "SSNIPE";
             bindings = <
-&trans      &trans        &trans        &trans        &trans        &trans                &trans          &trans  &trans  &trans  &trans  &trans
-&trans      &trans        &trans        &trans        &trans        &trans                &trans          &trans  &trans  &trans  &trans  &trans
-&trans      &trans        &trans        &trans        &trans        &trans                &trans          &trans  &trans  &trans  &trans
-&trans      &trans        &trans                      &trans        &trans                &trans          &trans  &trans  &trans  &trans  &trans
-&kp LEFT    &kp UP        &kp SPACE     &kp DOWN      &kp RIGHT                           &trans          &trans  &trans
-&trans     &trans
+&trans    &trans  &trans     &trans    &trans     &trans          &trans  &trans  &trans  &trans  &trans  &trans
+&trans    &trans  &trans     &trans    &trans     &trans          &trans  &trans  &trans  &trans  &trans  &trans
+&trans    &trans  &trans     &trans    &trans     &trans          &trans  &trans  &trans  &trans  &trans
+&trans    &trans  &trans               &trans     &trans          &trans  &trans  &trans  &trans  &trans  &trans
+&kp LEFT  &kp UP  &kp SPACE  &kp DOWN  &kp RIGHT                  &trans  &trans  &trans
+&trans    &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
