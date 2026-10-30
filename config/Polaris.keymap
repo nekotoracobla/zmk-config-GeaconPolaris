@@ -81,9 +81,9 @@
         default_layer {
             label = "Def";
             bindings = <
-&kp TAB       &kp Q       &kp W         &kp F     &kp SLASH      &kp LEFT_BRACKET          &lt SNIPE P     &kp R         &kp D         &kp Y     &kp L     &kp BACKSPACE
+&kp TAB       &kp Q       &kp W         &kp F     &kp COMMA      &kp LEFT_BRACKET          &lt SNIPE P     &kp R         &kp D         &kp Y     &kp L     &kp BACKSPACE
 &lt BT ESC    &kp A       &kp O         &kp E     &kp I          &kp U                     &kp G           &kp N         &kp T         &kp S     &kp K     &kp ENTER
-&kp LSHFT     &kp Z       &kp X         &kp C     &kp V          &kp B                     &kp J           &kp M         &kp COMMA     &kp DOT   &kp UP
+&kp LSHFT     &kp Z       &kp X         &kp C     &kp V          &kp B                     &kp J           &kp M         &kp H         &kp DOT   &kp UP
 &mt LCTL ESC  &kp LALT    &kp LEFT_GUI            &lt NUM SPACE  &lt FUNC SPACE            &lt FUNC SPACE  &lt NUM RALT  &lt NUM RCTL  &kp LEFT  &kp DOWN  &kp RIGHT
 &kp LEFT      &kp UP      &kp SPACE     &kp DOWN  &kp RIGHT                                &mkp MB1        &mkp MB3      &mkp MB2
 &mo SCROLL    &mo SSNIPE
