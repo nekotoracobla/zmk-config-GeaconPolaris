@@ -603,11 +603,11 @@ svg.physical-layout { font-family: ui-monospace, SFMono-Regular, Consolas, monos
 </g>
 <g class="key keypos-9 " transform="translate(744.48 71.365) rotate(-8.75 26 26)">
 <rect x="0" y="0" width="52" height="52" rx="6" ry="6"/>
-<text class="tap" x="26" y="26">;</text>
+<text class="tap" x="26" y="26">INTERNATIONAL_3</text>
 </g>
 <g class="key keypos-10 " transform="translate(796.48 65.645) rotate(-3.75 26 26)">
 <rect x="0" y="0" width="52" height="52" rx="6" ry="6"/>
-<text class="tap" x="26" y="26">INT_YEN</text>
+<text class="tap" x="26" y="26">;</text>
 </g>
 <g class="key keypos-11 transparent" transform="translate(849 64.605) rotate(0 -598 -52)">
 <rect x="0" y="0" width="52" height="52" rx="6" ry="6"/>
