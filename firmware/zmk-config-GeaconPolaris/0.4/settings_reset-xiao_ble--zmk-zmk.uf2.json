@@ -485,7 +485,7 @@
       }
     },
     "source": {
-      "commit": "367c276ea2ad6a1299152d1f0638b02beac3e210",
+      "commit": "2dc2be05111abd35ff3a8c01a744e597183bfadc",
       "diff_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
       "dirty": false,
       "untracked": {}
@@ -497,7 +497,7 @@
       "untracked": {}
     }
   },
-  "run_id": "41367737549",
+  "run_id": "41403235188",
   "schema": 1,
   "target": {
     "board": "xiao_ble//zmk",
