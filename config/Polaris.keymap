@@ -84,7 +84,7 @@
 &kp ESCAPE        &kp Q     &kp W         &kp F     &kp MINUS      &kp COMMA                 &lt SNIPE P         &kp R          &kp D                &kp Y     &kp L     &kp SQT
 &lt BT TAB        &kp A     &kp O         &kp E     &kp I          &kp U                     &kp G               &kp N          &kp T                &kp S     &kp K     &kp PERIOD
 &kp LSHFT         &kp Z     &kp X         &kp C     &kp V          &kp LEFT_BRACKET          &kp J               &kp M          &kp H                &kp B     &kp UP
-&mt LCTRL DELETE  &kp LALT  &kp LEFT_GUI            &lt NUM ENTER  &lt FUNC SPACE            &lt FUNC BACKSPACE  &lt NUM MINUS  &mt RIGHT_SHIFT TAB  &kp LEFT  &kp DOWN  &kp RIGHT
+&mt LCTRL DELETE  &kp LALT  &kp LEFT_GUI            &lt NUM SPACE  &lt FUNC ENTER            &lt FUNC BACKSPACE  &lt NUM MINUS  &mt RIGHT_SHIFT TAB  &kp LEFT  &kp DOWN  &kp RIGHT
 &kp LEFT          &kp UP    &kp SPACE     &kp DOWN  &kp RIGHT                                &mkp MB1            &mkp MB3       &mkp MB2
 &mo 6             &mo 5
             >;
