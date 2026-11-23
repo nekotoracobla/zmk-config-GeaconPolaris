@@ -54,11 +54,3 @@
 &default_transform {
     col-offset = <6>;
 };
-
-&scroll_inertia_v
-&zip_scroll_scaler 4 675     /* ← ここの2引数を */
-
-scroll_inertia_v {
-    scale     = <4>;          /*    ここに合わせる */
-    scale-div = <675>;
-};
