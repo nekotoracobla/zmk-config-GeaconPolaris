@@ -8,12 +8,23 @@ manifest:
       url-base: https://github.com/cormoran
     - name: ShiniNet
       url-base: https://github.com/ShiniNet
+    - name: abababababababa
+      url-base: https://github.com/abababababababa
+    - name: mjmjm0101
+      url-base: https://github.com/mjmjm0101
   projects:
     - name: zmk
       # remote: zmkfirmware
       remote: te9no
       revision: 7fd6a70261963be9bc0cb4102e6bad339e115c39
       import: app/west.yml
+    - name: zmk_encoder
+      remote: abababababababa
+      revision: main
+      path: modules/zmk_encoder
+    - name: zmk-input-processor-scroll-inertia
+      remote: mjmjm0101
+      revision: main
 
 # ZMK RGB LED Widget
     - name: zmk-rgbled-widget
