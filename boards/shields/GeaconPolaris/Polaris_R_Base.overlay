@@ -14,6 +14,7 @@
             = MATRIX_GPIOS
             ;
     };
+
     scroll_inertia_v: scroll_inertia_v {
         compatible = "zmk,input-processor-scroll-inertia";
         #input-processor-cells = <0>;
@@ -37,6 +38,7 @@
 &default_transform {
     col-offset = <6>;
 };
+
 &trackball_listener {
     scroller_v {
         layers = <5>;
