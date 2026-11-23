@@ -44,7 +44,7 @@
         swap-mod  = <(MOD_LSFT|MOD_RSFT)>;
     };
 
-    trackball_listener: trackball_listener {
+    trackball_listener {
         compatible = "zmk,input-listener";
         device = <&trackball>;
         input-processors = <&pointer_accel /* など */>;
