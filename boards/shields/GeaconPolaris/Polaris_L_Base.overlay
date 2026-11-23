@@ -117,3 +117,15 @@
         prechargep = <0x22>;
     };
 };
+
+&trackball_listener {
+    scroller_v {
+        layers = <4>;
+        input-processors = <
+            &zip_y_scaler (-1) 1
+            &zip_xy_to_scroll_mapper
+            &scroll_inertia_v
+            &zip_scroll_scaler 4 675
+        >;
+    };
+};
