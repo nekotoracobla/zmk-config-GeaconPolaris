@@ -18,13 +18,19 @@
         compatible = "zmk,input-processor-scroll-inertia";
         #input-processor-cells = <0>;
 
-        axis      = <1>;   /* 縦スクロール */
-        layer     = <5>;   /* 対象レイヤー */
+        /* axis: 0 = 両軸（自由2D）,
+                  1 = Y軸のみ（縦スクロール）,
+                  2 = X軸のみ（横スクロール） */
+        axis      = <1>;
+        layer     = <5>;          /* 縦スクロール用のレイヤー番号 */
 
-        scale     = <4>;   /* scroll_scalerと合わせる */
-        scale-div = <675>; /* scroll_scalerと合わせる */
+        /* 後段の zip_scroll_scaler の引数と合わせる */
+        scale     = <4>;
+        scale-div = <675>;
+
         /* オプション: Shiftを押している間だけ出力軸を反転 */
         swap-mod  = <(MOD_LSFT|MOD_RSFT)>;
+
     };
 };
 
