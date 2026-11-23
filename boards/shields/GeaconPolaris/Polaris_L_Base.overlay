@@ -72,6 +72,7 @@
             >;
         };
 };
+};
 
 &pinctrl {    
     i2c1_default: i2c1_default {
