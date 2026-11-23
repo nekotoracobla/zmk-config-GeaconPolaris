@@ -8,11 +8,17 @@ manifest:
       url-base: https://github.com/cormoran
     - name: ShiniNet
       url-base: https://github.com/ShiniNet
+    - name: abababababababa
+      url-base: https://github.com/abababababababa
   projects:
     - name: zmk
       remote: cormoran
       revision: e5c9b6915b56801193e359dd9bad4a167ce0d1b8
       import: app/west.yml
+    - name: zmk_encoder
+      remote: abababababababa
+      revision: main
+      path: modules/zmk_encoder
 
 # ZMK RGB LED Widget
     - name: zmk-rgbled-widget
