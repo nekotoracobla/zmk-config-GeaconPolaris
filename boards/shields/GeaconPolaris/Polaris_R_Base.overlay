@@ -39,7 +39,7 @@
     col-offset = <6>;
 };
 
-&trackball_listener {
+&trackball_listener: trackball_listener {
     scroller_v {
         layers = <5>;
         input-processors = <
