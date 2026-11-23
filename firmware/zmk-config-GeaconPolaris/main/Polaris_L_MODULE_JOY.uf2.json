@@ -4,7 +4,7 @@
     "sha256": "6884dae40fa404eab3732ea271d0dd7a8398d7ebc6dd69319e4a65dc10ec10a7"
   },
   "generated": {
-    ".config": "dc0447d20b31be0831ab246faea1287c0ce0e5c835c167dd665f6699ad6cf435",
+    ".config": "810542b9ae1655c3c6f8cd7db13238093a3b50baa95f28fbfa348012530c86c5",
     "zephyr.dts": "0af326afc32197ff3fab82c17739124b53a98a58180a08eebd21e5a64567f382"
   },
   "inputs": {
@@ -273,6 +273,12 @@
         "dirty": false,
         "untracked": {}
       },
+      "zmk-input-processor-scroll-inertia": {
+        "commit": "f7dadefee453d555fe066d13a3de3bb60739b45e",
+        "diff_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "dirty": false,
+        "untracked": {}
+      },
       "zmk-layout-shift": {
         "commit": "c7f0c6b199548b542dd543e8a0bf3e2c8941780f",
         "diff_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
@@ -338,10 +344,16 @@
         "diff_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
         "dirty": false,
         "untracked": {}
+      },
+      "zmk_encoder": {
+        "commit": "c706a9e831949cdd0e40c5b9edda23bcff1fd9e1",
+        "diff_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "dirty": false,
+        "untracked": {}
       }
     },
     "source": {
-      "commit": "b8b9ebe4d4480d3c58170a9cc2f81367aca49fee",
+      "commit": "6bcd04842a3f0b6f23ddf098e1f73bd2ed9543e8",
       "diff_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
       "dirty": false,
       "untracked": {}
@@ -353,7 +365,7 @@
       "untracked": {}
     }
   },
-  "run_id": "40997927236",
+  "run_id": "45148276484",
   "schema": 1,
   "target": {
     "artifact-name": "Polaris_L_MODULE_JOY",

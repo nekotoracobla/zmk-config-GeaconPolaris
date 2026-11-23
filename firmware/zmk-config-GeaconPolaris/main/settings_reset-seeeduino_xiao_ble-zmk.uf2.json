@@ -4,7 +4,7 @@
     "sha256": "e155703085675f3f91c26e9d994491cc17b5221f0870087eebd5099ae37ad2a6"
   },
   "generated": {
-    ".config": "ed03ff6ad2e43978f754ca8d8e0e75d695d4430f61ba8d5acff8de3835f57b3d",
+    ".config": "8442c1b3558231e14fc00c9f9636fdd44604e6e84bf948fd334a3396eda00f07",
     "zephyr.dts": "f426f9c71a41e958a5e8186e8ff085a6d39d0d3bcb65fa3982cb59a5f3d30ec0"
   },
   "inputs": {
@@ -273,6 +273,12 @@
         "dirty": false,
         "untracked": {}
       },
+      "zmk-input-processor-scroll-inertia": {
+        "commit": "f7dadefee453d555fe066d13a3de3bb60739b45e",
+        "diff_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "dirty": false,
+        "untracked": {}
+      },
       "zmk-layout-shift": {
         "commit": "c7f0c6b199548b542dd543e8a0bf3e2c8941780f",
         "diff_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
@@ -338,10 +344,16 @@
         "diff_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
         "dirty": false,
         "untracked": {}
+      },
+      "zmk_encoder": {
+        "commit": "c706a9e831949cdd0e40c5b9edda23bcff1fd9e1",
+        "diff_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "dirty": false,
+        "untracked": {}
       }
     },
     "source": {
-      "commit": "b8b9ebe4d4480d3c58170a9cc2f81367aca49fee",
+      "commit": "6bcd04842a3f0b6f23ddf098e1f73bd2ed9543e8",
       "diff_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
       "dirty": false,
       "untracked": {}
@@ -353,7 +365,7 @@
       "untracked": {}
     }
   },
-  "run_id": "40997927236",
+  "run_id": "45148276484",
   "schema": 1,
   "target": {
     "board": "seeeduino_xiao_ble",
