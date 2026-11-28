@@ -1,7 +1,6 @@
 #include "Polaris.dtsi"
 #include "Polaris_L_interior.dtsi"
 #include <input/processors/runtime-input-processor.dtsi>
-#include <dt-bindings/zmk/pointing.h>
 
 / {
     chosen {
