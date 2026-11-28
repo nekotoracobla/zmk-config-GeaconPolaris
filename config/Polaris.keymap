@@ -3,8 +3,8 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
-#include "layout_shift.dtsi"
 #include <dt-bindings/zmk/pointing.h>
+#include "layout_shift.dtsi"
 
 / {
     behaviors {
@@ -48,11 +48,6 @@
             tap-ms = <5>;
             cw-binding = <&msc SCRL_RIGHT>;
             ccw-binding = <&msc SCRL_LEFT>;
-        };
-
-        ec_ms_l: ec_ms_h {
-            compatible = "zmk,behavior-encoder-mouse-scroll";
-            #sensor-binding-cells = <2>;
         };
     };
 };
@@ -164,7 +159,7 @@
 &trans    &trans
             >;
 
-            sensor-bindings = <&ec_ms_l SCRL_LEFT SCRL_RIGHT &ec_ms_r SCRL_DOWN SCRL_UP>;
+            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
         };
 
         SSNIPE_layer {
